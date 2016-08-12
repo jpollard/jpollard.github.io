@@ -5,5 +5,5 @@ name = JosephPollard
 name = Production
 enabled = yes
 default = yes
-target = ghpages://jpollard/Play
+target = ghpages://jpollard/jpollard.github.io
 
