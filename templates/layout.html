@@ -1,10 +1,9 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+<link rel="stylesheet" href="{{ '/static/main.css'|url }}">
 <title>{% block title %}Welcome{% endblock %} — JosephPollard</title>
 <body>
   <header>
-    <h1>JosephPollard</h1>
     <nav>
       <ul class="nav navbar-nav">
         <li{% if this._path == '/' %} class="active"{% endif
@@ -19,8 +18,12 @@
       </ul>
     </nav>
   </header>
+  <div id="container">
+  <div id="main" class="column">
   <div class="page">
     {% block body %}{% endblock %}
+  </div>
+  </div>
   </div>
   <footer>
     &copy; Copyright 2016 by Joe Pollard.
