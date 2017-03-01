@@ -1,8 +1,11 @@
+_model: page
+---
 title: Home
 ---
 body:
 
-Welcome to my github page. What you'll find here is a list of my projects (mostly incomplete and rotting), and some other stuff. This is very much a work in progress, so forgive any sections that seem incomplete (much like the landing page ).
+Welcome to my github page. What you'll find here is a list of my projects (mostly incomplete and rotting), and some other stuff. 
+This is very much a work in progress, so forgive any sections that seem incomplete (much like the landing page ).
 
 
 ---jwp
