@@ -1,13 +1,25 @@
 _model: page
+_url: home
 ---
 title: Home
 ---
+image: home-header.png
+---
 body:
 
-Welcome to my github page. What you'll find here is a list of my projects (mostly incomplete and rotting), and some other stuff. 
+Welcome
+-------
+
+
+Welcome to my github page. It contains a list and description of most of the projects that I am working or have finished with, 
+ an up-to-date resume that is automatically updated when changes are made, and some info about who I am and what I do. 
 This is very much a work in progress, so forgive any sections that seem incomplete (much like the landing page ).
 
 
 ---jwp
 
 
+---
+_slug: 
+---
+_hidden: no

@@ -1,6 +1,11 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
+{% block card_title %}{{ this.title }}{% endblock %}
+{% block header_image %}{{ this.image }}{% endblock %}
 {% block body %}
-  <h2>{{ this.title }}</h2>
-  {{ this.body }}
+
+    <!-- <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">{{ this.title }}</h3> -->                                           
+    <div class="mdl-card__supporting-text no-padding ">
+        {{ this.body }}
+    </div>
 {% endblock %}
