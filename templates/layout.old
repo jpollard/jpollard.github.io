@@ -1,0 +1,43 @@
+<!doctype html>
+<meta charset="utf-8">
+<!-- <link rel="stylesheet" href="{{ '/static/main.css'|url }}"> -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.bluegrey-indigo.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<title>{% block title %}Welcome{% endblock %} — JosephPollard</title>
+<body>
+
+  <header>
+    <nav>
+      <ul class="nav navbar-nav">
+        {% for path, label in bag('nav').iteritems() %}
+        <li{% if this.is_child_of(path) %} class="active" {% endif %} >
+        <a href="{{ path|url }}">{{ label }}</a>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+
+  <div id="container">
+    <div id="main" class="column">
+      <div class="page">
+        {% block body %}{% endblock %}
+      </div>
+    </div>
+    
+    <div id="sidepanel" class="column">
+      {% block sidepanel %}{% endblock %}
+    </div>
+
+    <div id="ad" class="column">
+      {% block ad %}{% endblock %}
+    </div>
+  </div>
+
+  <footer>
+    &copy; Copyright 2017 by Joseph Pollard.
+  </footer>
+
+</body>
