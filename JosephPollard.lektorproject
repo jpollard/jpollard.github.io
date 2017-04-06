@@ -1,9 +1,0 @@
-[project]
-name = JosephPollard
-
-[servers.production]
-name = Production
-enabled = yes
-default = yes
-target = ghpages://jpollard/jpollard.github.io
-
